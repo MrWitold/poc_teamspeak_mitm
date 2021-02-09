@@ -2,6 +2,9 @@
 ### Possible way to execute man in the middle attack on teamspeak app
 #### Only for educational purposes and for showcase how dangerous is unencrypted traffic
 
+# Warning
+It's only proof of concept - may contains a lot of hardcoded variables, bad and inefficient practices 
+
 # Description
 The above application allows to listen and modify **unencrypted voice packets**, based on proxy server but also is able to read voice packets from packet dump.
 
