@@ -25,7 +25,10 @@ The possible ways usage of application - (Not all included but quite easy to imp
 * To listen voice packets - app check for defined udp traffic from certain ip address and redirects them into attacker connection
 * Befor sending traffic to the attacker, packet are prepared. (Because be receiving others users packet, we will not hear anything cause packet is not defined for us - that's why we chang "receiver_id","packet_id", "count_id"). Also we modify packets depends on are they incomming or outcomming - so if we want to listen we need to change outcomming traffic into incomming for us
 * We do the same as in the step above in case when we want to inject the traffic into other user comunication but the opposite way. (victim doesn't see anything because form servers point of view its looks like he is talking, but his client don't have this information - that's why others see it like he is talking but he doesn't )
-* To listen voice packets from dump file, we load the file and inject packets into attacker communication (In this case difficulty is correct speed rate of sending packets). 
+* To listen voice packets from dump file, we load the file and inject packets into attacker communication (In this case difficulty is correct speed rate of sending packets).
+
+# Diagram packet flow
+[!Diagram](poc_teamspeak_mitm.png)
 
 # How voice teamspeak packets are built, and how to live transcode them for other user.
 Soon
