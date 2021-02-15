@@ -30,5 +30,14 @@ The possible ways usage of application - (Not all included but quite easy to imp
 # Diagram packet flow
 [!Diagram](poc_teamspeak_mitm.png)
 
+# How to use
+1. Set teamspeak server address ip at main:79
+1. `go run main.go`
+1. Connect attacker and victim to server by `localhost:324` (if run locally)
+1. `output@client_id`     (client_id=32)
+1. `attacker@attacker_ip`  (attacker_ip=10.0.0.1:53203)
+1. `victim@victim_ip`  (attacker_ip=10.0.0.2:54249)
+1. `5` (To start or stop listening)
+
 # How voice teamspeak packets are built, and how to live transcode them for other user.
 Soon
